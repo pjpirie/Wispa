@@ -8,5 +8,7 @@ Pale Green #ADFC9B
 */
 
 .container {
+	width: 100vw;
+	height: 100vh;
 	background-color: #2E3133;
 }
