@@ -9,7 +9,7 @@
 
 <body>
 	<div class="container">
-		<h1>Test</h1>
+		<input class="main-input" type="text">
 	</div>
 </body>
 </html>

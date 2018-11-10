@@ -7,8 +7,31 @@ Pale Pink #E3A5F7
 Pale Green #ADFC9B
 */
 
+*{
+	margin: 0;
+	padding: 0;
+}
+
 .container {
+	padding: 60px;
 	width: 100vw;
 	height: 100vh;
 	background-color: #2E3133;
+}
+
+.main-input{
+	position: absolute;
+	background-color: rgba(0,0,0,0.15);
+	height: 60px;
+	width: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #FCF79B;
+	text-indent: 30px;
+	padding-right: 30px;
+	border: none;
+	border-radius: 30px;
+}
+input.main-input {
+	font-size: 1.5rem;
 }
