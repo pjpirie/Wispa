@@ -1,2 +1,12 @@
-/* CSS Document */
+/* CSS Document 
 
+Background #2E3133
+Pale Yellow #FCF79B
+Pale Brown #E0A88A
+Pale Pink #E3A5F7
+Pale Green #ADFC9B
+*/
+
+.container {
+	background-color: #2E3133;
+}
