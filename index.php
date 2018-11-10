@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Wispa</title>
+<link rel="stylesheet" href="main.css">
+<!--<script src="JS FILE HERE" defer></script>-->
 </head>
 
 <body>
