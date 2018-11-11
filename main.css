@@ -44,6 +44,7 @@ input.main-input {
 	cursor: pointer;
 	left: 85%;
 	position: absolute;
+	transform: translateX(-50%);
 }
 #add-svg{
 	transition: all 200ms ease-in-out

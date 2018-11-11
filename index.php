@@ -5,28 +5,16 @@
 <title>Wispa</title>
 <link rel="stylesheet" href="main.css">
 <!--<script src="JS FILE HERE" defer></script>-->
-<?php
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "wispa";
-
-	// Create connection
-	$conn = new mysqli($servername, $username, $password);
-
-	// Check connection
-	if ($conn->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	} 
-	echo "Connected successfully";
-?>
+	<?php
+		include("connect.php");
+	?>
 </head>
 
 <body>
 	<div class="container">
 		<form method="POST" action="add_SQL.php">
-			<input class="main-input" type="text">
-			<button id="add">
+			<input name="msg" class="main-input" type="text">
+			<button id="add" type="submit">
 			 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
 				 <defs>
 					 <style>
@@ -44,6 +32,21 @@
 			</svg>
 			</button>
 		</form>
+		<div class="msg-container">
+			<?php
+
+				$sql = "SELECT message FROM comments";
+				$result = mysqli_query($conn, $sql);
+				if (mysqli_num_rows($result) > 0) {
+				while($row = mysqli_fetch_assoc($result)){
+				   echo "<h1>Message: " . $row["message"]. "</h1><br>";
+				}
+				} else {
+					echo "0 results";
+				}
+
+			?>
+		</div>
 		
 	</div>
 </body>
