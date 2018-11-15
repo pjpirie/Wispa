@@ -10,6 +10,10 @@ Pale Green #ADFC9B
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	overflow: hidden;
 }
 
 .container {
@@ -18,7 +22,9 @@ Pale Green #ADFC9B
 	height: 100vh;
 	background-color: #2E3133;
 }
-
+.input-container{
+	min-height: 60px;
+}
 .main-input{
 	position: absolute;
 	background-color: rgba(0,0,0,0.15);
@@ -55,4 +61,30 @@ input.main-input {
 }
 svg:hover #add-svg{
 	fill: #9FF9D8;
+}
+
+
+.msg-container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 20%;
+	padding: 60px;
+}
+.comment-box{
+	margin: 30px;
+	width: 240px;
+}
+.comment-box-header{
+	background-color: #E3A5F7; 
+	width: 240px;
+	min-height: 20px;
+	border-radius: 10px 10px 0 0;
+	padding: 2px 5px;
+}
+.comment-box-message{
+	background-color: rgba(0,0,0,0.15); 
+	width: 240px;
+	min-height: 60px;
+	border-radius: 0 0 10px 10px;
+	
 }
